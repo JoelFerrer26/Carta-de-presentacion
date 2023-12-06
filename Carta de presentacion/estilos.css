@@ -1,8 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 main{
     width: 100%;
     height: 100vh;
@@ -11,70 +7,159 @@ main{
 }
 body{
     display: flex;
-    justify-content: center;
+    justify-content: auto;
 }
-.contenedor{
-    width: 300px;
-    height: 548px;
-    position: absolute;
-    top: 8%;
-    left: 40%;   
+.contenedor {
+    width: 894px;
+    height: 560px;
+    position: relative;
+    left: 220px;
+    top: 20px;
     box-shadow: 0 10px 20px #000;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     overflow: hidden;
-    font-family: sans-serif;
     border-radius: 60px;
-    background: linear-gradient(  #2C3E50 35%, #34495E 80%, #ECF0F1 100%  );
+    background: linear-gradient( #2C3E50 35%, #34495E 80%);
 }
-#foto{
+#foto {
     display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 165px;
-    height: 165px;
-    border-radius: 160px;
-    top: 3%;
-    left: 23%;
-    border: 5px;
-    color: white;
+    width: 45%;
+    height: 40%;
+    position: relative;
+    top: 15px;
+    left: 20px;
+    border-radius: 120px;
+    box-shadow: 0 10px 20px #34495E;
 }
 #info{
     position: relative;
-    top: 33%;
-    margin-top: 10px;
-    font-family: "Verdana", sans-serif;
-    color: #ECF0F1;
+    left: 25%;
+    top: -60%;
+    text-align: center;
+    color: #F4F6F7;
+    font-size: 20px;
 }
 #nombre{
+    position: relative;
+    top: -179px;
+    right: 24px;
     font-size: 40px;
 }
-#Ocupacion{
-    font-size: 30px;
-    margin-top: 10px;
+#InfoPersonal{
+    width: 48%;
+    position: relative;
+    left: 209px;
+    top: -209px;
+    text-align: justify;
+    font-size: 17px;
+}
+#InfoPersonal2{
+    font-size: 0px;
 }
 #Contacto{
-    font-size: 20px;
-    margin-top: 10px;
+    position: relative;
+    left: -4px;
+    top: -254px;
+    font-weight: bold;
 }
-#numero{
-    margin-top: 20px;
-    font-size: 20px;
+#gmail{
+    position: relative;
+    left: -4px;
+    top: -266px;
 }
 .contacto {
-    position: absolute;
-    bottom: 0;
-    top: 80%;
+    position: relative;
+    top: -590px;
+    left: 191px;
     width: 108%;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 .contacto img {
     width: 50px;
     height: 50px;
     border-radius: 150px;
     margin-right: 20px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}   
+#fecha{
+    position: absolute;
+    top: 0px;
+    right: 42px;
+    color: #D6DBDF;
+}
+
+@media (max-width : 560px) {
+    body{
+        background:#34495E;
+    }
+    .contenedor{
+        width: auto;
+        height: 100vh;
+        position: inherit;
+        padding-left: 0px;
+        padding-top: 0px;
+        background: transparent;
+        box-shadow: none;
+        border-radius: 0%;
+    }
+    #foto{
+        display: flex;
+        justify-content: center;
+        width: 225px;
+        height: 217px;
+        position: relative;
+        left: 96px;
+        top: 14px;
+    }
+    #info{
+        position: relative;
+        text-align: center;
+        left: auto;
+        top: auto;
+    }
+    #nombre{
+        position: relative;
+        left: 4px;
+        top: 8px;
+        font-size: 45px;
+        font-weight: bold;
+    }
+    #Contacto{
+        position: relative;
+        right: inherit;
+        top: -9px;
+        font-size: 30px;
+    }
+    #gmail{
+        position: relative;
+        right: inherit;
+        top: 5px;
+        font-size: 32px;
+    }
+    #InfoPersonal2{
+        font-size: 17px;
+        position: relative;
+        top: -48px;
+        text-align: center;
+    }
+    .contacto{
+        position: inherit;
+        justify-content: center;
+        align-items: center;
+        height: 117px;
+    }
+    .contacto img{
+        width: 70px;
+        height: 70px;
+    }
+    #InfoPersonal{
+        font-size: 0px;
+    }
+    #fecha{
+        position: relative;
+        top: 24px;
+        right: -217px;
+        color: #D6DBDF;
+    }
 }
